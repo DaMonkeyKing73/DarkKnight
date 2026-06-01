@@ -85,7 +85,7 @@
           <h2>Ready to join the club?</h2>
           <p>Complete the form below and we’ll send you details about our next meetup, membership options, and upcoming events.</p>
         </div>
-        <form id="register-form" class="register-form styled-form" action="https://script.google.com/macros/s/AKfycbwsnNbzHazOT7pKnuXbbtxHLTn4CZglB-GKYR9KMtALRHWRLL6A7kChJL7YmRXG-jNw/exec" method="post">
+        <form id="register-form" class="register-form styled-form" action="https://script.google.com/macros/s/AKfycbwsnNbzHazOT7pKnuXbbtxHLTn4CZglB-GKYR9KMtALRHWRLL6A7kChJL7YmRXG-jNw/exec" method="post" target="hidden-iframe">
           <label for="name">Full Name
             <input id="name" name="name" type="text" placeholder="Jane Doe" required />
           </label>
@@ -95,8 +95,8 @@
           </label>
 
           <button class="button button-primary" type="submit">Submit Registration</button>
-          <div id="form-message" class="form-message">Submit</div>
         </form>
+        <iframe id="hidden-iframe" name="hidden-iframe" style="display:none;"></iframe>
       </div>
     </section>
   </main>
