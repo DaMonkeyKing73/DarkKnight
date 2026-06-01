@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Checkmate Chess Club</title>
+  <title>Dark Knight Chess Club</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,7 +12,7 @@
       <div class="brand">
         <div class="logo">♟️</div>
         <div>
-          <h1>Checkmate Chess Club</h1>
+          <h1>Dark Knight Chess Club</h1>
           <p>Learn, compete, and connect over every move.</p>
         </div>
       </div>
@@ -29,8 +29,8 @@
       <div class="container hero-content">
         <div>
           <p class="eyebrow">Join Your Local Chess Community</p>
-          <h2>Grow your game with coaching, tournaments, and club spirit.</h2>
-          <p>Whether you're a beginner or tournament player, Checkmate Chess Club offers weekly sessions, friendly matches, and events for all ages.</p>
+          <h2>Focused on teaching beginners — three classes each month.</h2>
+          <p>Dark Knight Chess Club focuses on beginners with weekly group sessions and three monthly beginner classes; we do not run tournaments.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#register">Register Now</a>
             <a class="button button-secondary" href="#about">Learn More</a>
@@ -50,12 +50,12 @@
           <p>Practice tactics, play casual matches, and enjoy a welcoming chess environment every week.</p>
         </article>
         <article class="feature-card">
-          <h3>Coaching Sessions</h3>
-          <p>Receive guidance from experienced players with drills, openings, and strategic lessons.</p>
+          <h3>Group Sessions</h3>
+          <p>All sessions are group sessions led by experienced instructors focusing on drills, openings, and strategic lessons for beginners.</p>
         </article>
         <article class="feature-card">
-          <h3>Tournaments & Events</h3>
-          <p>Compete in club tournaments, team matches, and special themed chess nights.</p>
+          <h3>Monthly Beginner Classes</h3>
+          <p>Three beginner-focused classes each month that build fundamentals and confidence. No tournaments — we focus on learning.</p>
         </article>
       </div>
     </section>
@@ -63,17 +63,17 @@
     <section class="about-section container" id="about">
       <div class="about-grid">
         <div>
-          <h2>About Checkmate Chess Club</h2>
-          <p>Our club brings together chess players from all skill levels to build confidence, improve thinking skills, and forge lasting friendships.</p>
+          <h2>About Dark Knight Chess Club</h2>
+          <p>Our club is primarily focused on teaching beginners and helping new players build solid fundamentals through regular classes and supportive group practice.</p>
           <ul>
-            <li>Open to beginners, intermediates, and advanced players</li>
-            <li>Family-friendly atmosphere with youth coaching</li>
+            <li>Primarily focused on beginners and fundamentals</li>
+            <li>Family-friendly atmosphere with youth group sessions</li>
             <li>Flexible membership options and drop-in play</li>
           </ul>
         </div>
         <div class="about-card">
           <h3>Our Mission</h3>
-          <p>To create a strong local chess community where every player can learn, grow, and enjoy the game.</p>
+          <p>To create a strong local chess community focused on teaching beginners through regular monthly classes and supportive group practice.</p>
         </div>
       </div>
     </section>
@@ -85,24 +85,17 @@
           <h2>Ready to join the club?</h2>
           <p>Complete the form below and we’ll send you details about our next meetup, membership options, and upcoming events.</p>
         </div>
-        <form class="register-form" action="https://formspree.io/f/your-form-id" method="POST">
-          <label for="name">Full Name</label>
-          <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+        <form id="register-form" class="register-form styled-form" action="https://script.google.com/macros/s/AKfycbwsnNbzHazOT7pKnuXbbtxHLTn4CZglB-GKYR9KMtALRHWRLL6A7kChJL7YmRXG-jNw/exec" method="post">
+          <label for="name">Full Name
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+          </label>
 
-          <label for="email">Email Address</label>
-          <input id="email" name="email" type="email" placeholder="jane@example.com" required />
-
-          <label for="experience">Chess Experience</label>
-          <select id="experience" name="experience">
-            <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Advanced</option>
-          </select>
-
-          <label for="message">Message (optional)</label>
-          <textarea id="message" name="message" rows="4" placeholder="Tell us about your chess goals"></textarea>
+          <label for="email">Email Address
+            <input id="email" name="email" type="email" placeholder="jane@example.com" required />
+          </label>
 
           <button class="button button-primary" type="submit">Submit Registration</button>
+          <div id="form-message" class="form-message">Submit</div>
         </form>
       </div>
     </section>
@@ -110,7 +103,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>Checkmate Chess Club • Weekly practice, coaching, and tournaments</p>
+      <p>Dark Knight Chess Club • Weekly group sessions and three beginner classes per month — no tournaments</p>
       <p>Contact: hello@checkmateclub.example</p>
     </div>
   </footer>
