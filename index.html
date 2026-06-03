@@ -17,78 +17,126 @@
         </div>
       </div>
       <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#events">Events</a>
-        <a href="#register">Register</a>
+        <a href="#" onclick="switchTab(event, 'about')">About</a>
+        <a href="#" onclick="switchTab(event, 'events')">Events</a>
+        <a href="#" onclick="switchTab(event, 'register')">Register</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="container hero-content">
-        <div>
-          <p class="eyebrow">Join Your Local Chess Community</p>
-          <h2>Focused on teaching beginners — three classes each month.</h2>
-          <p>Dark Knight Chess Club focuses on beginners with three monthly beginner classes; we do not run tournaments.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#register">Register Now</a>
-            <a class="button button-secondary" href="#about">Learn More</a>
+    <section class="tabbed-section container">
+      <div class="tab-buttons">
+        <button class="tab-button active" data-tab="about">About</button>
+        <button class="tab-button" data-tab="events">Events</button>
+        <button class="tab-button" data-tab="register">Register</button>
+      </div>
+
+      <div id="about" class="tab-content active">
+        <div class="about-grid">
+          <div>
+            <h2>About Dark Knight Chess Club</h2>
+            <p>Our club is primarily focused on teaching beginners through three monthly classes and helping new players build solid fundamentals.</p>
+            <ul>
+              <li>Primarily focused on beginners and fundamentals</li>
+              <li>Family-friendly atmosphere with youth classes</li>
+              <li>Flexible membership options and drop-in play</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <h3>Our Mission</h3>
+            <p>To create a strong local chess community focused on teaching beginners through quality monthly classes.</p>
           </div>
         </div>
-        <div class="hero-visual">
-          <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80" alt="People playing chess" />
+        <div class="what-we-offer">
+          <h3>What You'll Find at the Club</h3>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Monthly Classes</h3>
+              <p>Three beginner-focused classes each month that build fundamentals and confidence focused on quality learning.</p>
+            </article>
+          </div>
+        </div>
+        <div class="volunteer-profiles">
+          <p class="eyebrow">Volunteer Team</p>
+          <h3>Meet the volunteers helping run the club</h3>
+          <div class="profile-grid">
+            <article class="profile-card">
+              <div class="profile-avatar">AB</div>
+              <h4>Alex Brown</h4>
+              <p class="profile-role">Coach & Mentor</p>
+              <p>Alex helps new players learn opening basics and builds confidence through friendly coaching. With 8+ years of playing experience, Alex specializes in beginner fundamentals and endgame strategies.</p>
+              <p class="profile-detail">Chess Rating: 1850 • Specialization: Openings & Tactics</p>
+            </article>
+            <article class="profile-card">
+              <div class="profile-avatar">MN</div>
+              <h4>Maria Nguyen</h4>
+              <p class="profile-role">Community Lead</p>
+              <p>Maria organizes club meetups, supports members, and keeps the group connected between sessions. She's passionate about building an inclusive chess community for all skill levels.</p>
+              <p class="profile-detail">Years Active: 5 • Focus: Community Building</p>
+            </article>
+            <article class="profile-card">
+              <div class="profile-avatar">JD</div>
+              <h4>Jordan Diaz</h4>
+              <p class="profile-role">Event Coordinator</p>
+              <p>Jordan coordinates class schedules, manages logistics, and makes sure every event runs smoothly. Experience in event planning ensures members always know when and where to show up.</p>
+              <p class="profile-detail">Years Active: 3 • Focus: Planning & Logistics</p>
+            </article>
+            <article class="profile-card">
+              <div class="profile-avatar">SP</div>
+              <h4>Samantha Park</h4>
+              <p class="profile-role">Volunteer Support</p>
+              <p>Samantha welcomes families, answers questions, and helps students feel comfortable at every meeting. Her approachable nature makes new members feel right at home.</p>
+              <p class="profile-detail">Years Active: 2 • Focus: Member Experience</p>
+            </article>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="features container" id="events">
-      <h2>What You’ll Find at the Club</h2>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <h3>Monthly Classes</h3>
-          <p>Three beginner-focused classes each month that build fundamentals and confidence focused on quality learning.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="about-section container" id="about">
-      <div class="about-grid">
-        <div>
-          <h2>About Dark Knight Chess Club</h2>
-          <p>Our club is primarily focused on teaching beginners through three monthly classes and helping new players build solid fundamentals.</p>
-          <ul>
-            <li>Primarily focused on beginners and fundamentals</li>
-            <li>Family-friendly atmosphere with youth classes</li>
-            <li>Flexible membership options and drop-in play</li>
-          </ul>
-        </div>
-        <div class="about-card">
-          <h3>Our Mission</h3>
-          <p>To create a strong local chess community focused on teaching beginners through quality monthly classes.</p>
+      <div id="events" class="tab-content">
+        <h2>Upcoming Classes</h2>
+        <div class="schedule-container">
+          <div class="schedule-card">
+            <h3>Beginner Fundamentals</h3>
+            <p class="schedule-day">Saturday, June 8, 2026</p>
+            <p class="schedule-time">10:00 AM - 11:30 AM</p>
+            <p>Learn the basics: board setup, piece movement, basic tactics, and opening principles. Perfect for complete beginners.</p>
+          </div>
+          <div class="schedule-card">
+            <h3>Tactics & Strategy</h3>
+            <p class="schedule-day">Saturday, June 15, 2026</p>
+            <p class="schedule-time">10:00 AM - 11:30 AM</p>
+            <p>Build on fundamentals with tactical puzzles, strategic planning, and how to recognize winning positions.</p>
+          </div>
+          <div class="schedule-card">
+            <h3>Practice & Play</h3>
+            <p class="schedule-day">Saturday, June 22, 2026</p>
+            <p class="schedule-time">10:00 AM - 11:30 AM</p>
+            <p>Put your skills to the test with friendly games, Q&A with instructors, and tips from experienced players.</p>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="register-section" id="register">
-      <div class="container register-inner">
-        <div class="register-info">
-          <p class="eyebrow">Sign up today</p>
-          <h2>Ready to join the club?</h2>
-          <p>Complete the form below and we’ll send you details about our next meetup, membership options, and upcoming events.</p>
+      <div id="register" class="tab-content">
+        <div class="register-inner-tab">
+          <div class="register-info">
+            <p class="eyebrow">Sign up today</p>
+            <h2>Ready to join the club?</h2>
+            <p>Complete the form below and we'll send you details about our next meetup, membership options, and upcoming events.</p>
+          </div>
+          <form id="register-form" class="register-form styled-form" action="https://script.google.com/macros/s/AKfycbwsnNbzHazOT7pKnuXbbtxHLTn4CZglB-GKYR9KMtALRHWRLL6A7kChJL7YmRXG-jNw/exec" method="post" target="hidden-iframe">
+            <label for="name">Full Name
+              <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+            </label>
+
+            <label for="email">Email Address
+              <input id="email" name="email" type="email" placeholder="jane@example.com" required />
+            </label>
+
+            <button class="button button-primary" type="submit">Submit Registration</button>
+          </form>
+          <iframe id="hidden-iframe" name="hidden-iframe" style="display:none;"></iframe>
         </div>
-        <form id="register-form" class="register-form styled-form" action="https://script.google.com/macros/s/AKfycbwsnNbzHazOT7pKnuXbbtxHLTn4CZglB-GKYR9KMtALRHWRLL6A7kChJL7YmRXG-jNw/exec" method="post" target="hidden-iframe">
-          <label for="name">Full Name
-            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
-          </label>
-
-          <label for="email">Email Address
-            <input id="email" name="email" type="email" placeholder="jane@example.com" required />
-          </label>
-
-          <button class="button button-primary" type="submit">Submit Registration</button>
-        </form>
-        <iframe id="hidden-iframe" name="hidden-iframe" style="display:none;"></iframe>
       </div>
     </section>
   </main>
